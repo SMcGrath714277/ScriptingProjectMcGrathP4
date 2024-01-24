@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class Game : MonoBehaviour
+public class GameOne : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        Player myPlayer = new Player();
+        Enemy enemy1 = new Enemy();
+        Enemy enemy2 = new Enemy();
+        Enemy enemy3 = new Enemy();
 
-        myPlayer.Experience = 5;
-        int x = myPlayer.Experience;
-        Debug.Log(x);
+        int x = Enemy.enemyCount;
     }
 
     // Update is called once per frame
