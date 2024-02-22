@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OvFruitClass
+public class OvFruitClass : MonoBehaviour
 {
     public OvFruitClass()
     {
