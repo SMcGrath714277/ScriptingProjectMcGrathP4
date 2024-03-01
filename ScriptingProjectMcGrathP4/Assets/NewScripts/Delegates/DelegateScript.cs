@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DelegateScript : MonoBehaviour
+{
+    delegate void MyDelegate(int num);
+    MyDelegate myDelegate;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        myDelegate = PrintNum;
+        myDelegate(50);
+
+        myDelegate = DoubleNum;
+        myDelegate(50);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    void PrintNum(int num)
+    {
+        print("Print Num: " + num * 2);
+    }
+
+    void DoubleNum(int num)
+    {
+        print ("Double Num: " + num * 2);
+    }
+}
