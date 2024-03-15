@@ -8,6 +8,6 @@ public static class ExtensionMethods
     {
         trans.position = Vector3.zero;
         trans.rotation = Quaternion.identity;
-        trans.localScale = new Vector3(1, 1, 1);
+        trans.localScale = new Vector3(2, 1, 20);
     }
 }
